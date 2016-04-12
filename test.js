@@ -1,39 +1,24 @@
-{
-name: 'Galvanize Heights',
-address: {
-  line1: '345 1st Avenue',
-  line2: 'Denver, CO'
-},
-units: [{
-  number: 1,
-  tenants: [{
-    first: 'Joe',
-    last: 'Smith',
-    lease: {
-      start: '2016-01-01',
-      end: '2016-12-31'
-      }
-    }]
-  }]
-}
+db.artistsdb.insert({
+  artists: [{
+        name: 'Bansky',
+        movement: 'Social Commentary',
+        image:
+        'http://d2jv9003bew7ag.cloudfront.net/uploads/Banksy-%E2%80%93-Girl-And-Balloon-in-London-2002.jpg'
+      }, {
+        name: 'Claude Money',
+        movement: 'Impressionist',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/440px-Claude_Monet_1899_Nadar_crop.jpg'
+        }
+]});
 
-
-{'  name: 'Denver Heights',
-  address: {'    line1: '748 First St',
-    city: 'Broomfield',
-    state: 'CO',
-    zip: 80210
-  },
-  units: [{
-    price: 130000,
-    number: 11,
-    tenants: [{
-      firstName: 'Steve',
-      lastName: 'Box',
-      lease: [{
-        start: new Date('2016-01-01'),
-        end: new Date('2017-01-01')
-      }]
-    }]
-  }]
-}
+db.artistsdb.insert({ artwork: [{
+    currentLocation: 'Broad Street, Newent',
+    name: 'Monkey Queen',
+    year: 2003,
+    image: 'http://static.independent.co.uk/s3fs-public/thumbnails/image/2014/06/06/16/Monkey-Queen.jpg'
+  },{
+    currentLocation: "Musee d'Orsay",
+    name: 'Poppy Field',
+    year: 1890,
+    image: 'http://www.artic.edu/aic/collections/citi/images/standard/WebLarge/WebImg_000267/185182_3187950.jpg'
+  }]})
